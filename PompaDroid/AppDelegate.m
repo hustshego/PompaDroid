@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "IntroLayer.h"
+#import "PDGamePadManager.h"
 
 @implementation MyNavigationController
 
@@ -102,7 +103,7 @@
 	//	[director setProjection:kCCDirectorProjection3D];
 	
 	// Enables High Res mode (Retina Display) on iPhone 4 and maintains low res on all other devices
-	if( ! [director_ enableRetinaDisplay:YES] )
+	if( ! [director_ enableRetinaDisplay:NO] )
 		CCLOG(@"Retina Display Not supported");
 	
 	// Default texture format for PNG/BMP/TIFF/JPEG/GIF images
@@ -136,6 +137,8 @@
 	// make main window visible
 	[window_ makeKeyAndVisible];
 	
+    [PDGamePadManager sharedInstance];
+    
 	return YES;
 }
 
@@ -184,11 +187,4 @@
 	[[CCDirector sharedDirector] setNextDeltaTimeZero:YES];
 }
 
-- (void) dealloc
-{
-	[window_ release];
-	[navController_ release];
-	
-	[super dealloc];
-}
 @end
