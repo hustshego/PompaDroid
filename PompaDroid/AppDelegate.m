@@ -138,6 +138,7 @@
 	[window_ makeKeyAndVisible];
 	
     [PDGamePadManager sharedInstance];
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
     
 	return YES;
 }

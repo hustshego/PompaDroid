@@ -7,6 +7,7 @@
 //
 
 #import "PDHero.h"
+#import "SimpleAudioEngine.h"
 
 @implementation PDHero
 
@@ -73,5 +74,10 @@
     return self;
 }
 
+-(void)knockout
+{
+    [super knockout];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"pd_herodeath.caf"];
+}
 
 @end

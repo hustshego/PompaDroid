@@ -154,6 +154,11 @@
 		61E4D82D1859CBD200D07CB7 /* PDGamePadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D82C1859CBD200D07CB7 /* PDGamePadManager.m */; };
 		61E4D82F1859CC0300D07CB7 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E4D82E1859CC0300D07CB7 /* GameController.framework */; };
 		61E4D836185AB8D700D07CB7 /* PDRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D835185AB8D700D07CB7 /* PDRobot.m */; };
+		A64547BB185CBC31000CBC46 /* latin_industries.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A64547B6185CBC31000CBC46 /* latin_industries.aifc */; };
+		A64547BC185CBC31000CBC46 /* pd_botdeath.caf in Resources */ = {isa = PBXBuildFile; fileRef = A64547B7185CBC31000CBC46 /* pd_botdeath.caf */; };
+		A64547BD185CBC31000CBC46 /* pd_herodeath.caf in Resources */ = {isa = PBXBuildFile; fileRef = A64547B8185CBC31000CBC46 /* pd_herodeath.caf */; };
+		A64547BE185CBC31000CBC46 /* pd_hit0.caf in Resources */ = {isa = PBXBuildFile; fileRef = A64547B9185CBC31000CBC46 /* pd_hit0.caf */; };
+		A64547BF185CBC31000CBC46 /* pd_hit1.caf in Resources */ = {isa = PBXBuildFile; fileRef = A64547BA185CBC31000CBC46 /* pd_hit1.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -459,6 +464,11 @@
 		61E4D8301859D9EC00D07CB7 /* PDGDMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDGDMDefines.h; sourceTree = "<group>"; };
 		61E4D834185AB8D700D07CB7 /* PDRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRobot.h; sourceTree = "<group>"; };
 		61E4D835185AB8D700D07CB7 /* PDRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDRobot.m; sourceTree = "<group>"; };
+		A64547B6185CBC31000CBC46 /* latin_industries.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = latin_industries.aifc; sourceTree = "<group>"; };
+		A64547B7185CBC31000CBC46 /* pd_botdeath.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pd_botdeath.caf; sourceTree = "<group>"; };
+		A64547B8185CBC31000CBC46 /* pd_herodeath.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pd_herodeath.caf; sourceTree = "<group>"; };
+		A64547B9185CBC31000CBC46 /* pd_hit0.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pd_hit0.caf; sourceTree = "<group>"; };
+		A64547BA185CBC31000CBC46 /* pd_hit1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pd_hit1.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -551,6 +561,7 @@
 		61893CB31859779F00CBAC1B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A64547B5185CBC31000CBC46 /* Sounds */,
 				61893E5A1859836500CBAC1B /* Sprites */,
 				61893CB41859779F00CBAC1B /* Default.png */,
 				61893CB61859779F00CBAC1B /* Default@2x.png */,
@@ -943,6 +954,18 @@
 			path = Sprites;
 			sourceTree = "<group>";
 		};
+		A64547B5185CBC31000CBC46 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A64547B6185CBC31000CBC46 /* latin_industries.aifc */,
+				A64547B7185CBC31000CBC46 /* pd_botdeath.caf */,
+				A64547B8185CBC31000CBC46 /* pd_herodeath.caf */,
+				A64547B9185CBC31000CBC46 /* pd_hit0.caf */,
+				A64547BA185CBC31000CBC46 /* pd_hit1.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -973,7 +996,7 @@
 				ORGANIZATIONNAME = harperzhang;
 				TargetAttributes = {
 					61893C9A1859779F00CBAC1B = {
-						DevelopmentTeam = RJT526LFK3;
+						DevelopmentTeam = SS539ST9VB;
 					};
 				};
 			};
@@ -1004,9 +1027,11 @@
 				61893CB91859779F00CBAC1B /* Default-568h@2x.png in Resources */,
 				61893CBB1859779F00CBAC1B /* Default-Landscape~ipad.png in Resources */,
 				61893CBD1859779F00CBAC1B /* Icon-72.png in Resources */,
+				A64547BC185CBC31000CBC46 /* pd_botdeath.caf in Resources */,
 				61893CBF1859779F00CBAC1B /* Icon-Small-50.png in Resources */,
 				61893CC11859779F00CBAC1B /* Icon-Small.png in Resources */,
 				61893CC31859779F00CBAC1B /* Icon-Small@2x.png in Resources */,
+				A64547BB185CBC31000CBC46 /* latin_industries.aifc in Resources */,
 				61893CC51859779F00CBAC1B /* Icon.png in Resources */,
 				61893CC71859779F00CBAC1B /* Icon@2x.png in Resources */,
 				61893CCA1859779F00CBAC1B /* iTunesArtwork in Resources */,
@@ -1014,9 +1039,12 @@
 				61893E611859836500CBAC1B /* pd_dpad-hd.png in Resources */,
 				61893E621859836500CBAC1B /* pd_dpad.png in Resources */,
 				61893E631859836500CBAC1B /* pd_sprites.plist in Resources */,
+				A64547BE185CBC31000CBC46 /* pd_hit0.caf in Resources */,
 				61893E641859836500CBAC1B /* pd_sprites.pvr.ccz in Resources */,
 				61893E651859836500CBAC1B /* pd_tilemap.tmx in Resources */,
+				A64547BD185CBC31000CBC46 /* pd_herodeath.caf in Resources */,
 				61893E661859836500CBAC1B /* pd_tiles.png in Resources */,
+				A64547BF185CBC31000CBC46 /* pd_hit1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1196,8 +1224,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 传华 李 (UL6A6QD9BN)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xun Zhang (324759WL4M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xun Zhang (324759WL4M)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1211,7 +1239,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "BF121CD7-F88F-420D-878A-9AD2905EF568";
+				PROVISIONING_PROFILE = "88CC91AA-B54A-4D95-9EB0-0BE9B4CC8A22";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1221,8 +1249,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 传华 李 (UL6A6QD9BN)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xun Zhang (324759WL4M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xun Zhang (324759WL4M)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PompaDroid/Prefix.pch;
@@ -1235,7 +1263,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "BF121CD7-F88F-420D-878A-9AD2905EF568";
+				PROVISIONING_PROFILE = "88CC91AA-B54A-4D95-9EB0-0BE9B4CC8A22";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

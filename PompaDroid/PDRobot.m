@@ -7,6 +7,7 @@
 //
 
 #import "PDRobot.h"
+#import "SimpleAudioEngine.h"
 
 @implementation PDRobot
 
@@ -71,6 +72,12 @@
     }
     
     return self;
+}
+
+-(void)knockout
+{
+    [super knockout];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"pd_botdeath.caf"];
 }
 
 @end

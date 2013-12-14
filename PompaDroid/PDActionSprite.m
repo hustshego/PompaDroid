@@ -7,6 +7,7 @@
 //
 
 #import "PDActionSprite.h"
+#import "SimpleAudioEngine.h"
 
 @implementation PDActionSprite
 
@@ -78,6 +79,9 @@
         [self runAction:_hurtAction];
         _actionState = kActionStateHurt;
         _hitPoints -= damage;
+        
+        int randomSound = random_range(0, 1);
+        [[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"pd_hit%d.caf", randomSound]];
         
         if (_hitPoints <= 0.0) {
             [self knockout];

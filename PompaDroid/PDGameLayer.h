@@ -10,6 +10,7 @@
 #import "CCTMXTiledMap.h"
 #import "CCSpriteBatchNode.h"
 #import "PDHero.h"
+#import "PDHudLayer.h"
 
 @interface PDGameLayer : CCLayer
 {
@@ -19,6 +20,7 @@
     PDHero*  _hero;
 }
 
+@property(nonatomic,weak) PDHudLayer* hud;
 @property (nonatomic, strong) CCArray*  robots;
 
 @end
