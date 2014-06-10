@@ -3,6 +3,7 @@ PompaDroid
 
 <h3>Summary</h3>
 Beat Em Up game called PompaDroid, which is controlled using iOS7 GCGameController.
+<br>Engine: Cocos2d.
 
 <h3>Requirements</h3>
 1. xCode 5+
